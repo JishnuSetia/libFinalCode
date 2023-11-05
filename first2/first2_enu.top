@@ -1,0 +1,21 @@
+topic: ~first2()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(1) $output1=1 $onStopped=1
+u:(2) $output1 = 2 $onStopped=1
+u:(3) $output1=3 $onStopped=1
+u:(4) $output1=4 $onStopped=1
+u:(5) $output1=5 $onStopped=1
+u:(6) $output1=6 $onStopped=1
+u:(7) $output1 = 7 $onStopped=1
+u:(8)  $output1=8 $onStopped=1
+u:(9) $output1=9 $onStopped=1
+u:(0) $output1=0 $onStopped=1

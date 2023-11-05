@@ -1,0 +1,18 @@
+topic: ~choose()
+language: enu
+
+# Defining extra concepts out of words or group of words
+concept:(fiction) [fiction "fiction books"]
+concept:(senior) [senior "senior school"]
+
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(~fiction) Are you in primary, middle or senior school?
+    u1:(primary)$outputp = 1
+    u1:(middle)$outputm = 1
+    u1:(~senior)$outputh =1
+    

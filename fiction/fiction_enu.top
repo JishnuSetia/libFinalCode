@@ -1,0 +1,12 @@
+topic: ~fiction()
+language: enu
+
+# Defining extra concepts out of words or group of words
+
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:( fiction) Wonderful!  $onStopped=1

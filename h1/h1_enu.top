@@ -1,0 +1,312 @@
+topic: ~h1()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(e:onStart)If you tell me the author's name or the book title, I can help you locate the book.
+u:^private(Jane Austen) You can look for it in shelf 34 A
+u:^private(Dan Brown) You can look for it in shelf 35 B
+u:^private(Judy Balan) You can look for it in shelf 36 B-C
+u:^private(Meg Cabot) You can look for it in shelf 37 C
+u:^private(Lee Child) You can look for it in shelf 38 - 39 C
+u:^private(Charles Dickens) You can look for it in shelf 39D
+u:^private(Jeffery Deaver) You can look for it in shelf 40 D-E
+u:^private(Becca Fitzpatrick) You can look for it in shelf 41 F-G
+u:^private(Georgette Heyer) You can look for it in shelf 42 H
+u:^private(Khaled Hosseini) You can look for it in shelf 43 H-L
+u:^private(Mark Haddon) You can look for it in shelf 44 H-L
+u:^private(John Irving) You can look for it in shelf 45 H-L
+u:^private(Traci L.Jones) You can look for it in shelf 46 H-L
+u:^private(Sue Monk Kidd) You can look for it in shelf 47 H-L
+u:^private(Stephen King) You can look for it in shelf 48 H-L
+u:^private(Harper Lee) You can look for it in shelf 49 H-L
+u:^private(Stephenie Meyer) You can look for it in shelf 44 M
+u:^private(Sarah J Maas) You can look for it in shelf 45 M
+u:^private(Haruki Murakami) You can look for it in shelf 46 M
+u:^private(Alice Munro) You can look for it in shelf 44 M-N
+u:^private(Garth Nix) You can look for it in shelf 44 N-O
+u:^private(Dave Pelzer) You can look for it in shelf 44 P
+u:^private(Christopher Paloni) You can look for it in shelf 44 P
+u:^private(Ayn Rand) You can look for it in shelf 45 R
+u:^private(Jonathan Stroud) You can look for it in shelf 45 S
+u:^private(Johnn Simpson) You can look for it in shelf 45 S
+u:^private(R.A.Salvatore) You can look for it in shelf 46 S-T
+u:^private(Tite Kubo) You can look for it in shelf 46 U-Z
+u:^private( Isaac Asimov) You can look for it in shelf 34 A
+u:^private( Charlotte Bronte) You can look for it in shelf 35 B
+u:^private( Fredrik Backman) You can look for it in shelf 36 B-C
+u:^private( P.C.Cast) You can look for it in shelf 37 C
+u:^private( Susan Collins) You can look for it in shelf 38 - 39 C
+u:^private( Anita Desai) You can look for it in shelf 39D
+u:^private( James Dashner) You can look for it in shelf 40 D-E
+u:^private( Stephen Fry) You can look for it in shelf 41 F-G
+u:^private( Geff Hirsch) You can look for it in shelf 42 H
+u:^private( Arthur Hailey) You can look for it in shelf 43 H-L
+u:^private( Kathryn Holmes) You can look for it in shelf 44 H-L
+u:^private( Ian Irvine) You can look for it in shelf 45 H-L
+u:^private( Diana Wynne Jones) You can look for it in shelf 46 H-L
+u:^private(Twinkle Khanna) You can look for it in shelf 47 H-L
+u:^private( Alexander Kent) You can look for it in shelf 48 H-L
+u:^private( Marie Lu) You can look for it in shelf 49 H-L
+u:^private( Robert muchamore) You can look for it in shelf 44 M
+u:^private( Sudha Murty) You can look for it in shelf 45 M
+u:^private( Julie Murphy) You can look for it in shelf 46 M
+u:^private( Siddhartha Mukherjee) You can look for it in shelf 44 M-N
+u:^private( V.S.Naipal) You can look for it in shelf 44 N-O
+u:^private( James Patterson) You can look for it in shelf 44 P
+u:^private( Shane Peacock) You can look for it in shelf 44 P
+u:^private( Veronica Roth) You can look for it in shelf 45 R
+u:^private( Ribin Sharma) You can look for it in shelf 45 S
+u:^private( Kathryn Stockett) You can look for it in shelf 45 S
+u:^private(John Simpson) You can look for it in shelf 46 S-T
+u:^private( Renee Watson) You can look for it in shelf 46 U-Z
+u:^private(Jeffrey Archer) You can look for it in shelf 34 A
+u:^private( David Baldacci) You can look for it in shelf 35 B
+u:^private(Ann Brashares) You can look for it in shelf 36 B-C
+u:^private( John Le Carre) You can look for it in shelf 37 C
+u:^private( Paulo Coelho) You can look for it in shelf 38 - 39 C
+u:^private( Daniel Dofoe) You can look for it in shelf 39D
+u:^private( Roald Dahl) You can look for it in shelf 40 D-E
+u:^private( Cornelia Funke) You can look for it in shelf 41 F-G
+u:^private( Erin Hunter) You can look for it in shelf 42 H
+u:^private( Chris Hadfield) You can look for it in shelf 43 H-L
+u:^private( Richard Holmes) You can look for it in shelf 44 H-L
+u:^private( Robert Jordan) You can look for it in shelf 45 H-L
+u:^private( Bimal Jalan) You can look for it in shelf 46 H-L
+u:^private(Robert Kolker) You can look for it in shelf 47 H-L
+u:^private( Laurie R.King) You can look for it in shelf 48 H-L
+u:^private( Doris Lessing) You can look for it in shelf 49 H-L
+u:^private( Steven Milhauser) You can look for it in shelf 44 M
+u:^private( Valerio Massimo Manfredi) You can look for it in shelf 45 M
+u:^private( David Michaels) You can look for it in shelf 46 M
+u:^private( Toni Morrison) You can look for it in shelf 44 M-N
+u:^private( Trevor Noah) You can look for it in shelf 44 N-O
+u:^private( Orhan Pamuk) You can look for it in shelf 44 P
+u:^private( Nora Roberts) You can look for it in shelf 44 P
+u:^private( Satyajit Ray) You can look for it in shelf 45 R
+u:^private( Louis Sachar) You can look for it in shelf 45 S
+u:^private( Mary Stewart) You can look for it in shelf 45 S
+u:^private(Vikram Seth) You can look for it in shelf 46 S-T
+u:^private( Patricia Wilson) You can look for it in shelf 46 U-Z
+u:^private( Mitch Albom) You can look for it in shelf 34 A
+u:^private( Chetan Bhagat) You can look for it in shelf 35 B
+u:^private( Barbara Taylor Bradford) You can look for it in shelf 36 B-C
+u:^private(G.P.Ching) You can look for it in shelf 37 C
+u:^private( M.R.Carey) You can look for it in shelf 38 - 39 C
+u:^private(Lynne Ewing) You can look for it in shelf 40 D-E
+u:^private( Vince Flynn) You can look for it in shelf 41 F-G
+u:^private(Sophie Hannah) You can look for it in shelf 42 H
+u:^private( Tara Hudson) You can look for it in shelf 43 H-L
+u:^private( Thomas Haris) You can look for it in shelf 44 H-L
+u:^private( Peter James) You can look for it in shelf 45 H-L
+u:^private( James Joyce) You can look for it in shelf 46 H-L
+u:^private( Jonathan Kellerman) You can look for it in shelf 47 H-L
+u:^private( Manju Kapur) You can look for it in shelf 48 H-L
+u:^private( Pittacus Lore) You can look for it in shelf 49 H-L
+u:^private( Jojo Moyes) You can look for it in shelf 44 M
+u:^private( Robert Muchamore, D.J.Machale) You can look for it in shelf 45 M
+u:^private( Robert Muchamore) You can look for it in shelf 46 M
+u:^private( Madelline Miller) You can look for it in shelf 44 M-N
+u:^private( Anita Nair) You can look for it in shelf 44 N-O
+u:^private( Terry Pratchett) You can look for it in shelf 44 P
+u:^private( Francine Pascal) You can look for it in shelf 44 P
+u:^private( Philip Reeve) You can look for it in shelf 45 R
+u:^private( Ashwin Sanghi) You can look for it in shelf 45 S
+u:^private( Robert Lewis Stevenson) You can look for it in shelf 45 S
+u:^private(L.J.Smith) You can look for it in shelf 46 S-T
+u:^private( H.G.Wells) You can look for it in shelf 46 U-Z
+u:^private( Amish) You can look for it in shelf 34 A
+u:^private( Maeve Binchy) You can look for it in shelf 35 B
+u:^private(Arthur C Clarke) You can look for it in shelf 36 B-C
+u:^private( Deepak Chopra) You can look for it in shelf 37 C
+u:^private( Lewis Carrol) You can look for it in shelf 38 - 39 C
+u:^private( Brian Evenson) You can look for it in shelf 40 D-E
+u:^private( Ken Follett) You can look for it in shelf 41 F-G
+u:^private(Anthony Horowitz) You can look for it in shelf 42 H
+u:^private( Ernest Hemingway) You can look for it in shelf 43 H-L
+u:^private( Joanne Harris) You can look for it in shelf 44 H-L
+u:^private( Iris Johansen) You can look for it in shelf 45 H-L
+u:^private( J.V.Jones) You can look for it in shelf 46 H-L
+u:^private( Cathy Kelly) You can look for it in shelf 47 H-L
+u:^private( Rudyard Kipling) You can look for it in shelf 48 H-L
+u:^private( Andrew Lane) You can look for it in shelf 49 H-L
+u:^private( Elizabeth Moon) You can look for it in shelf 44 M
+u:^private( Eliz, John Marsden) You can look for it in shelf 45 M
+u:^private( Karen Miller) You can look for it in shelf 46 M
+u:^private( Somerset Maugham) You can look for it in shelf 44 M-N
+u:^private( Lalitha Natraj) You can look for it in shelf 44 N-O
+u:^private( Mario Puzo) You can look for it in shelf 44 P
+u:^private( Ransom Riggs) You can look for it in shelf 44 P
+u:^private( Ian Rankin) You can look for it in shelf 45 R
+u:^private( Zoe Sugg) You can look for it in shelf 45 S
+u:^private( Trenton Lee Stewart) You can look for it in shelf 45 S
+u:^private(J.R.R.Tolkien) You can look for it in shelf 46 S-T
+u:^private( P.G.Wodehouse) You can look for it in shelf 46 U-Z
+u:^private( Margaret Atwood) You can look for it in shelf 34 A
+u:^private( Iain M.Bank) You can look for it in shelf 35 B
+u:^private(Mary Higgins Clarke) You can look for it in shelf 36 B-C
+u:^private(Tom Clancy) You can look for it in shelf 38 - 39 C
+u:^private( B.K. Evenson) You can look for it in shelf 40 D-E
+u:^private(John Flanagan) You can look for it in shelf 41 F-G
+u:^private( Sherlock Holmes series) You can look for it in shelf 42 H
+u:^private( Thomas Hardy) You can look for it in shelf 43 H-L
+u:^private( James Herbert) You can look for it in shelf 44 H-L
+u:^private( Anees Jung) You can look for it in shelf 45 H-L
+u:^private( Carrie Jones) You can look for it in shelf 46 H-L
+u:^private( Elizabeth Kostova) You can look for it in shelf 47 H-L
+u:^private( Stieg Larsson) You can look for it in shelf 49 H-L
+u:^private( Marissa Meyer) You can look for it in shelf 44 M
+u:^private( Andy McNab) You can look for it in shelf 45 M
+u:^private( Adeline Yen Mah) You can look for it in shelf 46 M
+u:^private( Alistair MacLean) You can look for it in shelf 44 M-N
+u:^private( Barack Obama) You can look for it in shelf 44 N-O
+u:^private( Jodi Picoult) You can look for it in shelf 44 P
+u:^private( Arthur Ransome) You can look for it in shelf 44 P
+u:^private( Ruth Rendel) You can look for it in shelf 45 R
+u:^private( Darren Shan) You can look for it in shelf 45 S
+u:^private( Anne Schraff) You can look for it in shelf 45 S
+u:^private( Mark Twain) You can look for it in shelf 46 S-T
+u:^private( Nancy Werlin) You can look for it in shelf 46 U-Z
+u:^private( Kelley Armstrong) You can look for it in shelf 34 A
+u:^private( Arthur C.Clarke) You can look for it in shelf 38 - 39 C
+u:^private( Dick Francis) You can look for it in shelf 41 F-G
+u:^private(Agatha Christie collection) You can look for it in shelf 42 H
+u:^private( Nathaniel) You can look for it in shelf 43 H-L
+u:^private( Gonn Iggulden) You can look for it in shelf 44 H-L
+u:^private( P.D.James) You can look for it in shelf 45 H-L
+u:^private( Erica Jong) You can look for it in shelf 46 H-L
+u:^private(Sophie Kinsella) You can look for it in shelf 47 H-L
+u:^private( Mary Lawson) You can look for it in shelf 49 H-L
+u:^private( Yann Martel) You can look for it in shelf 44 M
+u:^private( Sudha Murthy) You can look for it in shelf 45 M
+u:^private( Cliff McNish) You can look for it in shelf 46 M
+u:^private( Anand Neelakantan) You can look for it in shelf 44 M-N
+u:^private( Ben Okri) You can look for it in shelf 44 N-O
+u:^private( Richard Preston) You can look for it in shelf 44 P
+u:^private( Kathy Reichs) You can look for it in shelf 44 P
+u:^private( Chris Ryan) You can look for it in shelf 45 R
+u:^private( Paul Stewart) You can look for it in shelf 45 S
+u:^private( Wilbur Smith) You can look for it in shelf 45 S
+u:^private(Peter Torday) You can look for it in shelf 46 S-T
+u:^private( Nicola Yoon) You can look for it in shelf 46 U-Z
+u:^private(Neal Asher) You can look for it in shelf 34 A
+u:^private( Mary Higgins Clark) You can look for it in shelf 38 - 39 C
+u:^private(Maha Gargash) You can look for it in shelf 41 F-G
+u:^private( Hawthorne) You can look for it in shelf 43 H-L
+u:^private( John Irving) You can look for it in shelf 44 H-L
+u:^private( Peter James) You can look for it in shelf 45 H-L
+u:^private( Howard Jacobson) You can look for it in shelf 46 H-L
+u:^private(Dean Koontz) You can look for it in shelf 47 H-L
+u:^private( Lois Lowry) You can look for it in shelf 49 H-L
+u:^private( Perumal Murugan) You can look for it in shelf 44 M
+u:^private( Gabriel Garcia Marquez) You can look for it in shelf 45 M
+u:^private( Alter Dean Myers) You can look for it in shelf 46 M
+u:^private( R.K.Narayan) You can look for it in shelf 44 M-N
+u:^private( Lauren Oliver) You can look for it in shelf 44 N-O
+u:^private( Philip Pullman) You can look for it in shelf 44 P
+u:^private( Eleanor Robins) You can look for it in shelf 45 R
+u:^private( R.L.Stine) You can look for it in shelf 45 S
+u:^private( Danielle Steel) You can look for it in shelf 45 S
+u:^private(Alvin Toffler) You can look for it in shelf 46 S-T
+u:^private( Markus Zusak) You can look for it in shelf 46 U-Z
+u:^private(Cecelia Ahern) You can look for it in shelf 34 A
+u:^private( Cassandra Clare) You can look for it in shelf 38 - 39 C
+u:^private( John Green) You can look for it in shelf 41 F-G
+u:^private( Amanda Hocking) You can look for it in shelf 43 H-L
+u:^private( Kazuo Ishiguro) You can look for it in shelf 44 H-L
+u:^private( Henry James) You can look for it in shelf 45 H-L
+u:^private( Jane Jensen) You can look for it in shelf 46 H-L
+u:^private(Franz Kafka) You can look for it in shelf 47 H-L
+u:^private( Robert Ludlum) You can look for it in shelf 49 H-L
+u:^private( Kevin Missal) You can look for it in shelf 44 M
+u:^private( Mal Peet) You can look for it in shelf 44 P
+u:^private( Michael Scott) You can look for it in shelf 45 S
+u:^private( Sidney Sheldon) You can look for it in shelf 45 S
+u:^private(Rabindranath Tagore) You can look for it in shelf 46 S-T
+u:^private(Jean M.Auel) You can look for it in shelf 34 A
+u:^private( Clive Cussler) You can look for it in shelf 38 - 39 C
+u:^private( John Grisham) You can look for it in shelf 41 F-G
+u:^private(Paula Hawking) You can look for it in shelf 43 H-L
+u:^private( Pico Iyer) You can look for it in shelf 44 H-L
+u:^private( Dr.Utpal Kataki) You can look for it in shelf 46 H-L
+u:^private(Paul Kalanithi) You can look for it in shelf 47 H-L
+u:^private( Sara Pennypacker) You can look for it in shelf 44 P
+u:^private( Maggie) You can look for it in shelf 45 S
+u:^private(Leo Tolstoy) You can look for it in shelf 46 S-T
+u:^private(Maya Angelou) You can look for it in shelf 34 A
+u:^private( Robin Cook) You can look for it in shelf 38 - 39 C
+u:^private( Sally Green) You can look for it in shelf 41 F-G
+u:^private(O Henry) You can look for it in shelf 43 H-L
+u:^private( Eva Ibbotson) You can look for it in shelf 44 H-L
+u:^private(Richard North Pateterson) You can look for it in shelf 44 P
+u:^private( Stiefvater) You can look for it in shelf 45 S
+u:^private(Cate Tiernan) You can look for it in shelf 46 S-T
+u:^private(Lucy Adlington) You can look for it in shelf 34 A
+u:^private( Ally Condie) You can look for it in shelf 38 - 39 C
+u:^private( Sue Grafton) You can look for it in shelf 41 F-G
+u:^private(Thomas Hughes) You can look for it in shelf 43 H-L
+u:^private(Lesley Pearse) You can look for it in shelf 44 P
+u:^private( Simon Scarrow) You can look for it in shelf 45 S
+u:^private(Alfred Lord Tennyson) You can look for it in shelf 46 S-T
+u:^private(Aravind Adiga) You can look for it in shelf 34 A
+u:^private( Sir Arthur Conan Doyle) You can look for it in shelf 38 - 39 C
+u:^private( Michael Grant) You can look for it in shelf 41 F-G
+u:^private(Hermann Hesse) You can look for it in shelf 43 H-L
+u:^private( Michael Crichton) You can look for it in shelf 38 - 39 C
+u:^private( Amitav Ghosh) You can look for it in shelf 41 F-G
+u:^private(Terry Hayes) You can look for it in shelf 43 H-L
+u:^private( Patricia Cornwell) You can look for it in shelf 38 - 39 C
+u:^private(James Herriot) You can look for it in shelf 43 H-L
+u:^private( Daphne Du Maurier) You can look for it in shelf 38 - 39 C
+u:^private(Victoria Hislop) You can look for it in shelf 43 H-L
+u:^private( Christopher C.Doyle) You can look for it in shelf 38 - 39 C
+u:^private(Kristin Hannah) You can look for it in shelf 43 H-L
+u:^private(J K Rowling) You can look for it in shelf21
+u:^private(Geronimo Stilton) You can look for it in Shelf 20
+u:^private(Harry Potter) You can look for it in Shelf 21
+u:^private(Percy Jackson) You can look for it in Shelf 21
+u:^private(Naruto Series) You can look for it in Shelf21
+u:^private(Graphic Novels) You can look for it in Shelf 20
+u:^private(Nancy drew) You can look for it in Shelf 25
+u:^private(Hardy Boys) You can look for it in Shelf 24
+u:^private(Wimpy Kid series) You can look for it in Shelf 26
+u:^private(A to Z Mysteries) You can look for it in Shelf 22
+u:^private(Tom Gates) You can look for it in Shelf 20
+u:^private(Jake Maddox) You can look for it in Shelf 19
+u:^private(Land of stories) You can look for it in Shelf 16
+u:^private(Famous Five) You can look for it in Shelf 17
+u:^private(The 13th Reality) You can look for it in Shelf 17
+u:^private(Scarlet and Ivy) You can look for it in Shelf 16
+u:^private(Last Kids on Earth) You can look for it in Shelf 16
+u:^private(Narnia series) You can look for it in Shelf 19
+u:^private(Seven wonders) You can look for it in Shelf 19
+u:^private(Judy Moody) You can look for it in Shelf 19
+u:^private(Keeper of the lost cities) You can look for it in19
+u:^private(Big Nate series) You can look for it in Shelf 20
+u:^private(Wings of fire) You can look for it in Shelf 21
+u:^private(Series of unfortunate events) You can look for it in Shelf 21
+u:^private(Maze Runner) You can look for it in Shelf 40
+u:^private(Gone series) You can look for it in Shelf41
+u:^private(Alex Rider series) You can look for it in Shelf18
+u:^private(The Secret of Immortal Nicholas Flamel) You can look for it in Shelf 46
+u:^private(Twilight Series) You can look for it in Shelf 44
+u:^private(Naruto and Doctor stone manga series)You can look for it in Shelf 21
+u:^private(Middle School Series by James Patterson)You can look for it in Shelf 20
+u:^private(The Boy Sherlock Holmes series)You can look for it in Shelf 20
+u:^private(The cat in the hat )You can look for it inShelf 21
+u:^private(The Princess in Black )You can look for it inShelf 18
+u:^private(The BFG  )You can look for it inShelf 17
+u:^private(Adventure series  )You can look for it in Shelf 21
+u:^private(Holes  )You can look for it inShelf 21
+u:^private(Scarlet and Ivy )You can look for it inShelf 16
+u:^private(The 1000 year old boy)You can look for it in Shelf 22
+u:^private(Artemis Fowl )You can look for it inShelf 16
+u:^private(The one and only Ivan  )You can look for it inShelf 16
+u:^private(Thank you) I hope you enjoy reading the book you choose today. Don't hesitate to come back if you need any help finding books in the future. Have a great day!ccc
+

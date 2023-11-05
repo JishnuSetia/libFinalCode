@@ -1,0 +1,12 @@
+topic: ~high()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+concept:(senior) [senior high]
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(~senior) Great! Our library has lots of fiction books for senior school children to choose from. There are series like  THE SELECTION SERIES of Kiera Cass, TWILIGHT SERIES of Stephenie Meyer, DIVERGENT SERIES, INHERITANCE SERIES of Christopher Paolini, THE SECRET OF IMMORTAL NICHOLAS FLAMEL of Michael Scott, GONE SERIES OF Michael Grant, etc. I hope you like fantasy and adventure stories. If you tell me your lexile score, I can recommend some books.   $onStopped=1

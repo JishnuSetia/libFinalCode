@@ -1,0 +1,53 @@
+topic: ~nonfiction()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(e:onStart)What topic are you interested in learning about? I can tell you where to find it in the library.
+u:^private(ACCOUNTANCY) You can find it in shelf   14B
+u:^private(ANIMAL SCIENCE) You can go to shelf  12C
+u:^private(ARABIC) You can find it in shelf   60
+u:^private(ART/CRAFT) You can go to shelf  7-ABC
+u:^private( BIOGRAPHY) You can find it in shelf   4
+u:^private( BIOLOGY) You can find it in shelf   7-DEF
+u:^private( BUSINESS) You can find it in shelf 14A
+u:^private( CHEMISTRY) You can go to shelf  8
+u:^private( COMMERCE) You can find it in shelf   14A
+u:^private(COMPUTER SCIENCE) You can go to shelf  32
+u:^private(COOKERY) You can find it in shelf 13A
+u:^private(EARTH SCIENCE) You can find it in shelf 57D
+u:^private(ECONOMICS ) You can find it in shelf 30
+u:^private(ENCYCLOPEDIA) You can find it in shelf 57C
+u:^private(FRENCH) You can find it in shelf 27
+u:^private(GENERALITIES) You can find it in shelf 12
+u:^private(GEOGRAPHY) You can find it in shelf 3
+u:^private(GRAPHIC NOVELS) You can find it in shelf 20-E
+u:^private(HINDI) You can find it in shelf 28
+u:^private(HISTORY) You can find it in shelf 1 and 2
+u:^private(IB REFERENCE BOOKS) You can find it in shelf   58
+u:^private(ISLAMIC STUDIES) You can find it in shelf 33
+u:^private(LANGUAGE) You can find it in shelf 29
+u:^private(LITERATURE) You can find it in shelf 5&6
+u:^private(MACHINES/ROBOTICS) You can find it in shelf 12-B
+u:^private(MAGAZINES/PERIODICALS) You can find it in shelf 61
+u:^private(MAKERSPACE) You can go to shelf  59
+u:^private(MALAYALAM) You can find it in shelf 29
+u:^private(MATHEMATICS) You can find it in shelf 9
+u:^private(MUSIC) You can find it in shelf 12-A
+u:^private(NEW ARRIVALS) You can find it in shelf 55-58
+u:^private(PEDAGOGY) You can find it in shelf 15-B
+u:^private(PHYSICS) You can find it in shelf 8
+u:^private(PSYCHOLOGY) You can find it in shelf 31
+u:^private(SPANISH) You can find it in shelf 13
+u:^private(QUIZ) You can find it in shelf 11-A
+u:^private(SAT) You can find it in shelf 14 D
+u:^private(SCIENCE) You can go to shelf  57B
+u:^private(SPECIAL NEEDS) You can find it in shelf 61
+u:^private(SPORTS) You can find it in shelf 13-B
+u:^private(TEACHERS/SPECIMAN COPIES) You can find it in shelf 10

@@ -1,0 +1,41 @@
+topic: ~general()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+concept:(books)["how many books" "total number" " number of books" "numbers of books" "how many total books" "total books"]
+concept:(Arabic)["How many books in Arabic" " books in Arabic" Arabic "how many Arabic books"]
+concept:(Hindi)["How many Hindi" "Hindi" "how many books in hindi"]
+concept:(French)["How many French" "French"]
+concept:(Malayalam)["How many Malayalam" "Malayalam"]
+concept:(reference)["general reference" "reference" "reference books"]
+concept:(islamic)["how many islamic" "islamic" "islamic studies"]
+
+concept:(ratio)[ratio "books per student"]
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(~Books)We have total of 70500 books that includes books from senior and primary library. 
+u:(~Arabic)We have 3500 books in arabic
+u:(~Hindi)We have 530 fiction books in Hindi
+u:(~Malayalam)We have 530 fiction books in Malayalam
+u:(~French)We have 530 fiction books in French
+u:(~reference)We have more than 20000 reference books
+u:(~islamic)We have 750 islamic books 
+
+u:(~ratio)We have an average of 15 books per student 
+
+
+
+
+
+
+

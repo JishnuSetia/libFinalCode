@@ -1,0 +1,228 @@
+topic: ~m2()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(e:onStart)If you tell me the author's name or the book title, I can help you locate the book.
+u:^private(David Almond) You can look for it in shelf16
+u:^private(Ben M.Baglio) You can look for it in shelf16
+u:^private(Caroline Carlson) You can look for it in shelf16
+u:^private(Deepak Dalal) You can look for it in shelf17
+u:^private(Debi Evans) You can look for it in shelf17
+u:^private(Jasper Forde) You can look for it in shelf17
+u:^private(Andy Griffiths) You can look for it in shelf18
+u:^private(Anthony Horowitz) You can look for it in shelf18
+u:^private(Eva Ibbotson) You can look for it in shelf18
+u:^private(P.B. Kerr) You can look for it in shelf18
+u:^private(C.S.Lewis) You can look for it in shelf19
+u:^private(D.J.MacHale) You can look for it in shelf19
+u:^private(E.Nesbit) You can look for it in shelf19
+u:^private(Illustrated Classics) You can look for it in shelf20
+u:^private(R.J.Palacio) You can look for it in shelf20
+u:^private(Christopher Pike) You can look for it in shelf20
+u:^private(Geronimo Stilton) You can look for it in shelf20
+u:^private(Jason Strange) You can look for it in shelf21
+u:^private(Lemony Snicket ) You can look for it in shelf21
+u:^private(Louis Sachar) You can look for it in shelf21
+u:^private(Philip Reeve) You can look for it in shelf22
+u:^private(Lauren Tarshis ) You can look for it in shelf22
+u:^private(Bikram Vohra) You can look for it in shelf22
+u:^private(Jacqueline Woodson) You can look for it in shelf22
+u:^private(Jacqueline Wilson) You can look for it in shelf22
+u:^private(R.L.Stine ) You can look for it in shelf26
+u:^private(Tony Abbott) You can look for it in shelf16
+u:^private( Eeast Quest series) You can look for it in shelf16
+u:^private(Lewis Carroll) You can look for it in shelf16
+u:^private( Nicola Davies) You can look for it in shelf17
+u:^private( Christopher Edge) You can look for it in shelf17
+u:^private( Anne Fine) You can look for it in shelf17
+u:^private(Shannon Hale) You can look for it in shelf18
+u:^private( Rachel Hamilton) You can look for it in shelf18
+u:^private( Brian Jacques) You can look for it in shelf18
+u:^private( Rudyard Kipling) You can look for it in shelf18
+u:^private( Gill Lewis) You can look for it in shelf19
+u:^private( Tahereh Mafi) You can look for it in shelf19
+u:^private(Jennifer A.Nielsen) You can look for it in shelf19
+u:^private( Michelle Paver) You can look for it in shelf20
+u:^private( Steven Peterman ) You can look for it in shelf20
+u:^private( Thea Stilton) You can look for it in shelf20
+u:^private( Sir Steve Stevenson) You can look for it in shelf21
+u:^private(Walter Sorrells) You can look for it in shelf21
+u:^private( Nancy Springer) You can look for it in shelf21
+u:^private(Jamie Rix) You can look for it in shelf22
+u:^private( Jordan Stratford) You can look for it in shelf22
+u:^private( Wendelin Van Draanen) You can look for it in shelf22
+u:^private( Johann Wyss) You can look for it in shelf22
+u:^private( David Walliams) You can look for it in shelf22
+u:^private(John Aggard) You can look for it in shelf16
+u:^private( Judy Blume) You can look for it in shelf16
+u:^private( Cathy Cassidy) You can look for it in shelf16
+u:^private( Holly Black) You can look for it in shelf17
+u:^private( Kathleen Ernst) You can look for it in shelf17
+u:^private( Cornelia Funke) You can look for it in shelf17
+u:^private(Lyn Gardner) You can look for it in shelf18
+u:^private( Virginia Hamilton) You can look for it in shelf18
+u:^private( Lauren St. John) You can look for it in shelf18
+u:^private( Gordon Korman) You can look for it in shelf18
+u:^private( Grace Lin) You can look for it in shelf19
+u:^private( Jonathan Meres) You can look for it in shelf19
+u:^private( Mary Norton) You can look for it in shelf19
+u:^private( Gary Paulsen) You can look for it in shelf20
+u:^private(Terry Pratchett) You can look for it in shelf20
+u:^private( Jonathan Stroud Robert Louis Stevenson) You can look for it in shelf21
+u:^private(Lucy Strange) You can look for it in shelf21
+u:^private( Carl Sommer) You can look for it in shelf21
+u:^private(Ron Roy ) You can look for it in shelf22
+u:^private( Jennifer Torres) You can look for it in shelf22
+u:^private( Cynthia Voigt) You can look for it in shelf22
+u:^private( Tom Watson) You can look for it in shelf22
+u:^private( Gertrude Chandler Warner) You can look for it in shelf22
+u:^private(Laurie Halse Anderson) You can look for it in shelf16
+u:^private( Michael Bond) You can look for it in shelf16
+u:^private( Soman Chainani) You can look for it in shelf16
+u:^private( Charles Dickens) You can look for it in shelf17
+u:^private(Walter Farley ) You can look for it in shelf17
+u:^private(Neil Gaiman) You can look for it in shelf18
+u:^private( Erin Hunter) You can look for it in shelf18
+u:^private( W. E. Johns) You can look for it in shelf18
+u:^private( Cynthia Kadohata) You can look for it in shelf18
+u:^private( Lois Lowry) You can look for it in shelf19
+u:^private( Megan McDonald ) You can look for it in shelf19
+u:^private( Jenny Nimmo) You can look for it in shelf19
+u:^private( James Patterson) You can look for it in shelf20
+u:^private( Philip Pullman) You can look for it in shelf20
+u:^private( Donald J.Sobol) You can look for it in shelf21
+u:^private(Alexander McCall Smith) You can look for it in shelf21
+u:^private( Paul Stewart) You can look for it in shelf21
+u:^private(A to Z Mysteries) You can look for it in shelf22
+u:^private( Mark Twain) You can look for it in shelf22
+u:^private( Jules Verne) You can look for it in shelf22
+u:^private( Lara Williamson) You can look for it in shelf22
+u:^private(Louisa May Alcott) You can look for it in shelf16
+u:^private( Faerieground) You can look for it in shelf16
+u:^private( Bryan Chick) You can look for it in shelf16
+u:^private( Sharon M. Draper) You can look for it in shelf17
+u:^private(Judith C. Greenburg) You can look for it in shelf18
+u:^private( A.F.Harrold) You can look for it in shelf18
+u:^private( Peter Lerangis) You can look for it in shelf18
+u:^private( Jake Madox) You can look for it in shelf19
+u:^private( Anne Mazer) You can look for it in shelf19
+u:^private( Garth Nix) You can look for it in shelf19
+u:^private( Barbara Park) You can look for it in shelf20
+u:^private( James Patterson) You can look for it in shelf20
+u:^private(Francesca Simon ) You can look for it in shelf21
+u:^private( Tui T.Sutherland) You can look for it in shelf21
+u:^private( Rachel Renee Russel) You can look for it in shelf22
+u:^private( Mildred D.Taylor) You can look for it in shelf22
+u:^private( Jon Walter) You can look for it in shelf22
+u:^private(Katherine Applegate) You can look for it in shelf16
+u:^private( Ruskin Bond) You can look for it in shelf16
+u:^private( Chris Colfer) You can look for it in shelf16
+u:^private(John Grisham) You can look for it in shelf18
+u:^private( Erin Hunter) You can look for it in shelf18
+u:^private( Kirby Larson) You can look for it in shelf18
+u:^private( Leslie, Margolis) You can look for it in shelf19
+u:^private( Geraldine Mccaughrean) You can look for it in shelf19
+u:^private( Michael Northrop) You can look for it in shelf19
+u:^private(Richard Peck) You can look for it in shelf20
+u:^private(Willard Price) You can look for it in shelf20
+u:^private(Anna Sewell) You can look for it in shelf21
+u:^private( Angie Sage) You can look for it in shelf21
+u:^private(Onjali Q.Rauf) You can look for it in shelf22
+u:^private( Lauren Wolk) You can look for it in shelf22
+u:^private(Kwame Alexander) You can look for it in shelf16
+u:^private( Eoin Colfer) You can look for it in shelf16
+u:^private(Peterson Haddix) You can look for it in shelf18
+u:^private( Paul Hutchinson) You can look for it in shelf18
+u:^private( Caroline Lawrence) You can look for it in shelf18
+u:^private( Carole Marsh) You can look for it in shelf19
+u:^private( Mary Pope Osborne) You can look for it in shelf19
+u:^private( Christopher Paloni ) You can look for it in shelf20
+u:^private(Linda Sue Park) You can look for it in shelf20
+u:^private( Aisha Saeed) You can look for it in shelf21
+u:^private( Katherine Rundell) You can look for it in shelf22
+u:^private( Deborah Wiles) You can look for it in shelf22
+u:^private( Shannon Hale) You can look for it in shelf18
+u:^private( Ann M.Martin) You can look for it in shelf19
+u:^private( George Orwell) You can look for it in shelf19
+u:^private( Rachel Searles) You can look for it in shelf21
+u:^private(Jaison Reynolds) You can look for it in shelf22
+u:^private( Kathy Hoopmann) You can look for it in shelf18
+u:^private( Emily Winfield Martin) You can look for it in shelf19
+u:^private( Kate O'Hearn) You can look for it in shelf19
+u:^private( Neal Shusterman) You can look for it in shelf21
+u:^private(Ann Rinaldi) You can look for it in shelf22
+u:^private( Lynda Mullay Hunt) You can look for it in shelf18
+u:^private( M. Masters) You can look for it in shelf19
+u:^private( Brandon Sanderson) You can look for it in shelf21
+u:^private( Jordan Stratford) You can look for it in shelf21
+u:^private( J K Rowling) You can look for it in shelf21
+u:^private(Geronimo Stilton) You can look for it in Shelf 20
+u:^private(Harry Potter) You can look for it in Shelf 21
+u:^private(Percy Jackson) You can look for it in Shelf 21
+u:^private(Naruto Series) You can look for it in Shelf21
+u:^private(Graphic Novels) You can look for it in Shelf 20
+u:^private(Nancy drew) You can look for it in Shelf 25
+u:^private(Hardy Boys) You can look for it in Shelf 24
+u:^private(Wimpy Kid series) You can look for it in Shelf 26
+u:^private(A to Z Mysteries) You can look for it in Shelf 22
+u:^private(Tom Gates) You can look for it in Shelf 20
+u:^private(Jake Maddox) You can look for it in Shelf 19
+u:^private(Land of stories) You can look for it in Shelf 16
+u:^private(Famous Five) You can look for it in Shelf 17
+u:^private(The 13th Reality) You can look for it in Shelf 17
+u:^private(Scarlet and Ivy) You can look for it in Shelf 16
+u:^private(Last Kids on Earth) You can look for it in Shelf 16
+u:^private(Seven wonders) You can look for it in Shelf 19
+u:^private(Judy Moody) You can look for it in Shelf 19
+u:^private(Keeper of the lost cities) You can look for it in19
+u:^private(Big Nate series) You can look for it in Shelf 20
+u:^private(Wings of fire) You can look for it in Shelf 21
+u:^private(Series of unfortunate events) You can look for it in Shelf 21
+u:^private(Maze Runner) You can look for it in Shelf 40
+u:^private(Gone) You can look for it in Shelf41
+u:^private(Alex Rider ) You can look for it in Shelf18
+u:^private(The Secret of Immortal Nicholas Flamel) You can look for it in Shelf 46
+u:^private(Twilight Series) You can look for it in Shelf 44
+u:^private(Magic Tree House)You can look for it in Shelf 20
+u:^private(Spirit Animals)You can look for it in Shelf 22
+u:^private(Tintin series graphic novel)You can look for it in Shelf 21
+u:^private(Asterix series graphic novels)You can look for it in Shelf 20
+u:^private(Graphic adventure)You can look for it in Shelf 21
+u:^private(Animal stories)You can look for it in Shelf 20
+u:^private(Junie B Jones series)You can look for it in Shelf 20
+u:^private(Tracey Hecht and Sarah Fieber)You can look for it in Shelf 20
+u:^private(Tale of Redwall)You can look for it in Shelf 20
+u:^private(Echo and the Bat Pack)You can look for it in Shelf 20
+u:^private(Mariella Mystery investigates)You can look for it in Shelf 20
+u:^private(Olivia Kidney)You can look for it in Shelf 20
+u:^private(The World of Norm)You can look for it in Shelf 18
+u:^private(Sherlock Sam series)You can look for it in Shelf 19
+u:^private(Naruto and Doctor stone manga series)You can look for it in Shelf 21
+u:^private(Middle School Series by James Patterson)You can look for it in Shelf 20
+u:^private(The Boy Sherlock Holmes series)You can look for it in Shelf 20
+u:^private(Wonder )You can look for it inShelf 20
+u:^private(Alex Rider series )You can look for it inShelf 18
+
+u:^private(Wish )You can look for it inShelf 16
+u:^private(Barbara O Connor )You can look for it inShelf 16
+u:^private(An eagle in the snow)You can look for it inShelf 19
+u:^private(I, Robot )You can look for it inShelf 34
+u:^private(Isaac Asimov )You can look for it inShelf 34
+
+u:^private(Inside Out and Back Again )You can look for it inShelf 19
+u:^private(Thanhha Lai )You can look for it inShelf 19
+u:^private(The chronicles of Narnia ) You can look for it in Shelf 19
+
+
+u:^private(Thank you) I hope you enjoy reading the book you choose today. Don't hesitate to come back if you need any help finding books in the future. Have a great day!$onStopped=1
+
+
+
+

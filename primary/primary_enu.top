@@ -1,0 +1,12 @@
+topic: ~primary()
+language: enu
+
+# Defining extra concepts out of words or group of words
+
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(e:onStart) \RSPD=90\Great! Our library has lots of fiction books for primary to choose from. There are series like LAND OF STORIES written by Chris Colfer, THE CHRONICLES OF NARNIA written by C. S. Lewis, WINGS OF FIRE written by Tui T. Sutherland, A SERIES OF UNFORTUNATE EVENTS by Lemony Snicket, FAMOUS FIVE SERIES by Enid Blyton, ILLUSTRATED CLASSICS, etc. I hope you like fantasy and adventure stories. If you tell me your lexile score, I can recommend some books.  $onStopped=1

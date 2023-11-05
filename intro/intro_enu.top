@@ -1,0 +1,17 @@
+topic: ~intro()
+language: enu
+
+# Defining extra concepts out of words or group of words
+concept:(hi) [hello hey "good morning" greetings "hello pepper" "hi pepper"]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(~hi) Hello! Welcome to the library. My name is Nao, and I'm here to assist you. Are you looking for a book to read today?
+
+    u1:(Yes) Let's find a book that you'll enjoy reading. What do you prefer, fiction or non-fiction books?
+    u1:(No)Don't hesitate to come back if you need any help finding books in the future. Have a great day!
+    
+
