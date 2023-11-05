@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ChoregrapheProject xmlns="http://www.ald.softbankrobotics.com/schema/choregraphe/project.xsd" xar_version="3">
+  <Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0">
+    <bitmap>media/images/box/root.png</bitmap>
+    <script language="4">
+      <content>
+        <![CDATA[]]>
+      </content>
+    </script>
+    <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+    <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+    <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+    <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+    <Timeline enable="0">
+      <BehaviorLayer name="behavior_layer1">
+        <BehaviorKeyframe name="keyframe1" index="1">
+          <Diagram scale="50">
+            <Box name="nonfiction" id="4" localization="8" tooltip="" x="428" y="247">
+              <dialogFile>../nonfiction/nonfiction.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="p1" id="21" localization="8" tooltip="" x="1249" y="173">
+              <dialogFile>../p1/p1.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="m1" id="45" localization="8" tooltip="" x="1249" y="282">
+              <dialogFile>../m1/m1.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="h1" id="60" localization="8" tooltip="" x="1221" y="432">
+              <dialogFile>../h1/h1.dlg</dialogFile>
+              <bitmap>media/images/box/box-dialog.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+            </Box>
+            <Box name="Face Reco. (1)" id="67" localization="8" tooltip="Detect people&apos;s face and recognize those which are known by the robot.&#x0A;&#x0A;Note: the robot needs to learn a face with the Learn Face box before he can recognize it." x="98" y="100">
+              <bitmap>media/images/box/interaction/reco_face.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Input name="FaceDetected" type="0" type_size="1" nature="4" stm_value_name="FaceDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
+              <Output name="onRecognizedFaces" type="3" type_size="1" nature="2" inner="0" tooltip="Names of recognized faces. If several faces are recognized, they are sent one&#x0A;after an other on this output." id="6" />
+              <Timeline enable="0">
+                <BehaviorLayer name="behavior_layer1">
+                  <BehaviorKeyframe name="keyframe1" index="1">
+                    <Diagram>
+                      <Box name="Reco. Det. Faces" id="1" localization="8" tooltip="Process face detection extractor data (FaceDetected) to extract the labels of&#x0A;recognized faces and notify when there is a face detected but not recognized.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the number of&#x0A;recognized faces change." x="183" y="68">
+                        <bitmap>media/images/box/interaction/reco_face.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.timeFilteredResult = [];
+
+    def onUnload(self):
+        #puts code for box cleanup here
+        pass
+
+    def onInput_onStart(self, p):
+        if(len(p) > 0):
+            if(len(p[1]) > 0): # just in case of the ALValue is in the wrong format
+                # get the ALValue returned by the time filtered recognition:
+                #    - [] when nothing new.
+                #    - [4] when a face has been detected but not recognized during the first 8s.
+                #    - [2, [faceName]] when one face has been recognized.
+                #    - [3, [faceName1, faceName2, ...]] when several faces have been recognized.
+                self.timeFilteredResult = p[1][len(p[1]) -1]
+                if( len(self.timeFilteredResult) == 1 ):
+                    # If a face has been detected for more than 8s but not recognized
+                    if(self.timeFilteredResult[0] == 4):
+                        self.onDetectWithoutReco()
+                elif( len(self.timeFilteredResult) == 2 ):
+                    # If one or several faces have been recognized
+                    if(self.timeFilteredResult[0] in [2, 3]):
+                        for s in self.timeFilteredResult[1]:
+                            self.onRecognizedFace( s )
+
+    def onInput_onStop(self):
+        pass]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;FaceDetected extractor data." id="2" />
+                        <Output name="onRecognizedFace" type="3" type_size="1" nature="1" inner="0" tooltip="Name of recognized face. If several faces are recognized, they are sent one after an&#x0A;other on this output.&#x0A;&#x0A;Note: if it is the wrong face which has been recognized, you have 7s to rename&#x0A;it with the relearn function available on one of  Add/Del Faces sub-boxes (Learn Face&#x0A;box)." id="3" />
+                        <Output name="onDetectWithoutReco" type="1" type_size="1" nature="1" inner="0" tooltip="A face has been detected for more than 8s but has not been recognized. It means&#x0A;that the robot does not know this face but it would be a good idea to learn it." id="4" />
+                      </Box>
+                      <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="4" />
+                      <Link inputowner="0" indexofinput="6" outputowner="1" indexofoutput="3" />
+                    </Diagram>
+                  </BehaviorKeyframe>
+                </BehaviorLayer>
+              </Timeline>
+            </Box>
+            <Box name="intro" id="2" localization="8" tooltip="" x="286" y="136">
+              <bitmap>media/images/box/box-python-script.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        self.dialog = ALProxy('ALDialog')
+        self.tts = ALProxy('ALTextToSpeech')
+        self.dialog.setLanguage('English')
+        self.mem = ALProxy('ALMemory')
+        try:
+            self.speech = ALProxy("ALSpeechRecognition")
+            self.speech.setLanguage('English')
+            self.logger.info('Running on real robot')
+        except:
+            self.logger.info('Running on virtual robot')
+            self.speech = None
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        #self.onStopped() #activate the output of the box
+        pass
+
+    def onInput_input(self, p):
+        names = p.split(",")
+        name = names[1]
+        grade = int(names[0])
+        lexile = int(names[2])
+        pos = names[3]
+        self.tts.say("hello")
+        self.tts.say(name)
+
+        self.tts.say("Welcome to the library. My name is Nao, and I'm here to assist you. Are you looking for a book to read today?")
+        reactions = {
+        'yes':  'Let us find a book that you will enjoy reading. ',
+        'no': 'Do not hesitate to come back if you need any help finding books in the future. Have a great day!'
+
+        }
+        answer = self.get_answer(reactions)
+        react = reactions.get(answer)
+        self.logger.info('answer={}, react={}'.format(answer, react))
+        self.tts.say(react)
+
+        del reactions
+        if answer == "yes":
+            self.tts.say("What do you prefer, fiction or non-fiction books?")
+            reactions = {
+            'fiction':  'wonderful',
+            'non fiction': 'good'
+
+            }
+            answer = self.get_answer(reactions)
+            react = reactions.get(answer)
+            self.logger.info('answer={}, react={}'.format(answer, react))
+            self.tts.say(react)
+
+            del reactions
+            if answer =="fiction":
+                self.output1(p)
+            else:
+                self.output2()
+        self.onStopped()
+
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        del self.reactions
+        self.onStopped() #activate the output of the box
+
+    def get_answer(self,reactions):
+        import random
+        if self.speech is None:
+            # random answer on virtual robot
+            return (random.choice(reactions.keys()))
+        else:
+            try:
+                self.speech.setVocabulary(reactions.keys(), False)
+            except RuntimeError: # fix incorrectly reset dialog
+                self.onLoad()
+                self.speech.setVocabulary(reactions.keys(), False)
+            self.speech.subscribe("Test_ASR")
+            self.logger.info('Speech recognition engine started')
+            while True:
+                word = self.mem.getData("WordRecognized")
+                if type(word) == list and word[0] != '':
+                    break
+            self.speech.unsubscribe("Test_ASR")
+            return word[0]]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Input name="input" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" />
+              <Output name="output1" type="3" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+              <Output name="output2" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+            </Box>
+            <Box name="bookRecomendation" id="5" localization="8" tooltip="" x="613" y="126">
+              <bitmap>media/images/box/box-python-script.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[import random
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        self.tts = ALProxy("ALTextToSpeech")
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        #self.onStopped() #activate the output of the box
+        pass
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box
+
+    def onInput_inputdetails(self, p):
+        names = p.split(",")
+        name = names[1]
+        grade = int(names[0])
+        lexile = int(names[2])
+        pos = names[3]
+
+        self.tts.say(name)
+        '''
+        if pos == "student":
+            if grade <=5:
+                if lexile <=450:
+                    self.outputp1()
+                elif lexile <=700:
+                    self.outputp2()
+                else:
+                    self.outputp3()
+            elif grade <=8:
+                if lexile <=450:
+                    self.outputm1()
+                elif lexile <=700:
+                    self.outputm2()
+                else:
+                    self.outputm3()
+            else:
+                if lexile <=450:
+                    self.outputh1()
+                elif lexile <=700:
+                    self.outputh2()
+                else:
+                    self.outputh3()
+        else:
+            self.tts.say("hello teacher")
+
+'''
+        if pos=="student":
+            if grade>=1 and grade<=5:
+                if lexile <= 400:
+                    books = ["Magic Tree House Series" , "Magic School Bus by Joanna Cole" , "Amulet Series", "Asterix" , "Graphic Adventures"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 645:
+                    books = ["The Cat in the Hat" , "The Princess in Black" , "Smile" , "Henry and Mudge" , "Sugar and Spice" , "Midnight on the Moon" , "Nancy Clancy,                     Super Sleuth" , "Judy Moody and the Bad Luck Charm" , "The Girl who Drank the Moon" , "A to Z Mysteries" , "Star war series" , "Amelia Bedelia Series"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 745:
+                    books = ["BFG", "Adventure Series" , "Holes" , "Scarlet and Ivy" , "The 1000 Year Old Boy" , "Artemis Fowl" , "The one and only Ivan" , "The kid who came from Space" , "The blue umbrella" , "Land of stories series" , "Famous Five Series" , "Mariella Mystery Investigates" , "Hardy Boys" , "Nancy Drew"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 890:
+                    books = ["Wonder" , "Alex Rider Series" , "Narnia Series" , "Matilda" , "Inside Out and Back Again" , "Wish" , "The Boy who harnessed the wind", "An eagle in the snow"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 1200:
+                    books = ["The Jungle Books", "How to train your dragon" , "The Wind in the Willows", "Journey to the Center of the Earth" , "The Swiss Family Robinson", "A Series of Unfortuneate Events"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                else:
+                    books = ["Little Women", "The Legend of Sleepy Hollow", "Ivanhoe", "Huck Finn"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+            elif grade>=6 and grade<=8:
+                if lexile <= 400:
+                    self.tts.say("Your lexile is low. Please read a few Graphic Novels to improve your lexile.")
+                elif lexile <= 645:
+                    books = ["The Princess in Black by Shannon Hale", "Smile by Raina Telgemeier", "Midnight on the Moon by Osborne, Mary Pope", "Nancy Clancy, Super Sleuth by Jane O'Connor", "Judy Moody and the Bad Luck Charm by Megan McDonald", "When stars are scattered by Victoria Jamieson", "The Girl Who Drank the Moon by Kelly Barnhill", "A to Z Mysteries", "Amelia Bedelia series"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 745:
+                    books = ["Middle School Series by James Patterson","Holes by Louis Sachar","Scarlet and Ivy by Sophie Cleverly","The 1000-Year-old Boy by Ross Welford","Artemis Fowl by Eoin Colfer","Holes by Louis Sachar","Number the stars by Lois Lowry","The Kid Who Came from Space by Ross Welford","A Long Walk to Water by Linda Sue Park","The Blue Umbrella by Ruskin Bond","Land of Stories series by Chris Colfer","Famous Five series by Enid Blyton","Mariella Mystery investigates","Hardy boys series","Nancy Drew series"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 890:
+                    books = ["Wonder by R J Palacio","Alex Rider series by Anthony Horovitz","Narnia series by C S Lewis","Inside Out & Back Again by Thanhha Lai","Wish by Barbara O'Connor","The 1,000-Year-old Boy by Ross Welford","The boy who harnessed the wind by William Kamkwa","An eagle in the snow by Michael Morpurgo","The House of Dies Drear by Virginia Hamilton"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 1200:
+                    books = ["The Jungle Books by Rudyard Kipling","The Hobbit by J R R Tolkien","A Tale of Two Cities by Charles Dickens","Threatened by Eliot Schrefer","How to train your dragon by Cressida Cowell","The Wind in the Willows by Kenneth Grahame","Journey to the Center of the Earth by Jules Verne","The Swiss Family Robinson by Johann David Wyss","A Series of Unfortunate Events by lemony Snickett","Hard Times by Charles Dickens"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 1500:
+                    books = ["Little Women by Louisa May Alcott","The legend of sleepy hollow by Washington Irving","The Tales of Beedle the Bard by J.K. Rowling","The Last of the Mohicans by James Fenimore Cooper","Ivanhoe by Sir Walter Scott","Huck Finn by Mark Twain"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                else:
+                    books = ["Rule of the Bone by Russell Banks", "How I Live Now by Meg Rosoff"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+            if grade>=9 and grade<=12:
+                if lexile <= 400:
+                    self.tts.say("Your lexile is low. Please read a few Graphic Novels to improve your lexile.")
+                elif lexile <= 645:
+                    books = ["Smile by Raina Telgemeier", "Midnight on the Moon by Osborne, Mary Pope",
+                                     "Nancy Clancy, Super Sleuth by Jane O'Connor", "Judy Moody and the Bad Luck Charm by Megan McDonald",
+                                     "When Stars Are Scattered by Victoria Jamieson", "The Girl Who Drank the Moon by Kelly Barnhill"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 745:
+                    books = ["Scarlet and Ivy by Sophie Cleverly", "The 1000-Year-Old Boy by Ross Welford",
+                                     "Artemis Fowl by Eoin Colfer", "Holes by Louis Sachar", "The One and Only Ivan by Katherine Applegate",
+                                     "Number the Stars by Lois Lowry", "The Kid Who Came from Space by Ross Welford",
+                                     "A Long Walk to Water by Linda Sue Park", "Dust On The Mountain by Ruskin Bond"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 890:
+                    books = ["Wonder by R J Palacio", "Alex Rider series by Anthony Horovitz", "Inside Out & Back Again by Thanhha Lai",
+                                     "Wish by Barbara O'Connor", "The 1,000-Year-Old Boy by Ross Welford",
+                                     "The Boy Who Harnessed the Wind by William Kamkwamba", "An Eagle in the Snow by Michael Morpurgo",
+                                     "I, Robot by Isaac Asimov", "The House of Dies Drear by Virginia Hamilton"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 1200:
+                    books = ["The Hobbit by J R R Tolkien", "A Tale of Two Cities by Charles Dickens",
+                                     "Threatened by Eliot Schrefer", "How to Train Your Dragon by Cressida Cowell",
+                                     "The Wind in the Willows by Kenneth Grahame", "Journey to the Center of the Earth by Jules Verne",
+                                     "The Swiss Family Robinson by Johann David Wyss", "A Series of Unfortunate Events by Lemony Snickett",
+                                     "Brain by Robin Cook", "Hard Times by Charles Dickens", "To the Lighthouse by Virginia Woolf"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                elif lexile <= 1500:
+                    books = ["Little Women by Louisa May Alcott", "One Hundred Years of Solitude by Gabriel Garcia Marquez",
+                                     "The Legend of Sleepy Hollow by Washington Irving", "The Tales of Beedle the Bard by J.K. Rowling",
+                                     "The Last of the Mohicans by James Fenimore Cooper", "Metamorphosis by Franz Kafka",
+                                     "Ivanhoe by Sir Walter Scott", "Huck Finn by Mark Twain"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+                else:
+                    books = ["Rule of the Bone by Russell Banks", "How I Live Now by Meg Rosoff"]
+                    recommended_books = random.sample(books, 2)
+                    self.tts.say("Here are 2 books which I recommend to read to improve your lexile:")
+                    for book in recommended_books:
+                        self.tts.say(book)
+        self.tts.say("Would you like more recommendations")
+        self.outputdetails(p)
+            '''
+                if lexile<=400:
+                    self.output15()
+                elif lexile>400 and lexile<=645:
+                    self.output16()
+                elif lexile>645 and lexile<=745:
+                    self.output17()
+                elif lexile>745 and lexile<=890:
+                    self.output18()
+                elif lexile>890 and lexile<=1200:
+                    self.output19()
+                elif lexile>1200 and lexile<=1500:
+                    self.output20()
+                elif lexile>1500:
+                    self.output21()
+            else:
+                self.tts.say("Hello Teacher")
+                self.output22()
+
+        name = p
+        face_data = {
+        "preetha": {
+            "lexile": 300,
+            "school": "middle"
+        },
+        "piyush": {
+            "lexile": 500,
+            "school": "primary"
+        },
+        "prathish": {
+            "lexile": 900,
+            "school": "senior"
+        }
+        }
+
+        if name in face_data:
+            if face_data[name]["school"] == "middle":
+                self.tts.say("Great! Our library has lots of fiction books for middle school children to choose from. There are series like PERCY JACKSON by Rick Riordan, ALEX RIDER by Anthony Horowitz, SCARLET AND IVY by Sophie Cleverly, MAZE RUNNER by James Dashner, etc. I hope you like fantasy and adventure stories. If you tell me your lexile score, I can recommend some books.")
+                if face_data["preetha"]["lexile"]<=450:
+                    $onStopped=1
+                elif face_data["preetha"]["lexile"]<=700:
+                    $onStopped=1
+                else:
+                    $onStopped=1
+            elif face_data[name]["school"] == "primary":
+                self.tts.say("Great! Our library has lots of fiction books for primary to choose from. There are series like LAND OF STORIES written by Chris Colfer, THE CHRONICLES OF NARNIA written by C. S. Lewis, WINGS OF FIRE written by Tui T. Sutherland, A SERIES OF UNFORTUNATE EVENTS by Lemony Snicket, FAMOUS FIVE SERIES by Enid Blyton, ILLUSTRATED CLASSICS, etc. I hope you like fantasy and adventure stories. If you tell me your lexile score, I can recommend some books.")
+                if face_data["preetha"]["lexile"]<=450:
+                    $onStopped=1
+                elif face_data["preetha"]["lexile"]<=750:
+                    $onStopped=1
+                else:
+                    self.tts.say("primary above 700")
+            elif face_data[name]["school"] == "senior":
+                self.tts.say("Great! Our library has lots of fiction books for senior school children to choose from. There are series like  THE SELECTION SERIES of Kiera Cass, TWILIGHT SERIES of Stephenie Meyer, DIVERGENT SERIES, INHERITANCE SERIES of Christopher Paolini, THE SECRET OF IMMORTAL NICHOLAS FLAMEL of Michael Scott, GONE SERIES OF Michael Grant, etc. I hope you like fantasy and adventure stories. If you tell me your lexile score, I can recommend some books.")
+
+                if face_data["preetha"]["lexile"]<=450:
+                    $onStopped=1
+                elif face_data["preetha"]["lexile"]<=750:
+                    $onStopped=1
+                else:
+                    $onStopped=1''']]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Input name="inputdetails" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" />
+              <Output name="outputdetails" type="3" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+            </Box>
+            <Box name="continue?" id="6" localization="8" tooltip="" x="766" y="186">
+              <bitmap>media/images/box/box-python-script.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        #self.onStopped() #activate the output of the box
+        pass
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box
+
+    def onInput_inputdetails(self, p):
+        self.tts.say("Would you like more book recommendations?")
+        reactions = {
+        'yes':  'Ok ',
+        'no': 'Ok'
+
+        }
+        answer = self.get_answer(reactions)
+        react = reactions.get(answer)
+        self.logger.info('answer={}, react={}'.format(answer, react))
+        self.tts.say(react)
+        del reactions
+        if answer=="yes":
+            self.outputYes(p)
+            self.onStopped()
+        if answer=="no"
+            names = p.split(",")
+            name = names[1]
+            grade = int(names[0])
+            lexile = int(names[2])
+            pos = names[3]
+            if grade>=1 and grade<=5:
+                self.outputGradeP();
+                self.onStopped()
+            if grade>=6 and grade<=8:
+                self.outputGradeM();
+                self.onStopped()
+            if grade>=9:
+                self.outputGradeS();
+                self.onStopped()]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+              <Input name="inputdetails" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" />
+              <Output name="outputYes" type="3" type_size="1" nature="2" inner="0" tooltip="" id="6" />
+              <Output name="outputGradeP" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" />
+              <Output name="outputGradeM" type="1" type_size="1" nature="2" inner="0" tooltip="" id="8" />
+              <Output name="outputGradeS" type="1" type_size="1" nature="2" inner="0" tooltip="" id="9" />
+            </Box>
+            <Link inputowner="0" indexofinput="4" outputowner="45" indexofoutput="4" />
+            <Link inputowner="0" indexofinput="4" outputowner="60" indexofoutput="4" />
+            <Link inputowner="67" indexofinput="3" outputowner="67" indexofoutput="6" />
+            <Link inputowner="67" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="2" indexofinput="4" outputowner="67" indexofoutput="6" />
+            <Link inputowner="2" indexofinput="2" outputowner="67" indexofoutput="5" />
+            <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="7" />
+            <Link inputowner="5" indexofinput="2" outputowner="2" indexofoutput="5" />
+            <Link inputowner="5" indexofinput="4" outputowner="2" indexofoutput="6" />
+            <Link inputowner="6" indexofinput="4" outputowner="5" indexofoutput="6" />
+            <Link inputowner="5" indexofinput="4" outputowner="6" indexofoutput="6" />
+            <Link inputowner="0" indexofinput="4" outputowner="21" indexofoutput="4" />
+            <Link inputowner="21" indexofinput="2" outputowner="6" indexofoutput="7" />
+            <Link inputowner="45" indexofinput="2" outputowner="6" indexofoutput="8" />
+            <Link inputowner="60" indexofinput="2" outputowner="6" indexofoutput="9" />
+          </Diagram>
+        </BehaviorKeyframe>
+      </BehaviorLayer>
+    </Timeline>
+  </Box>
+</ChoregrapheProject>
